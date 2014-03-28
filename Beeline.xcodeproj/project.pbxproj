@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9CADEBCB18E63BB3005D36D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCA18E63BB3005D36D2 /* Foundation.framework */; };
+		9CADEBCD18E63BB3005D36D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCC18E63BB3005D36D2 /* CoreGraphics.framework */; };
+		9CADEBCF18E63BB3005D36D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCE18E63BB3005D36D2 /* UIKit.framework */; };
+		9CADEBD118E63BB3005D36D2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBD018E63BB3005D36D2 /* CoreData.framework */; };
+		9CADEBD718E63BB3005D36D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CADEBD518E63BB3005D36D2 /* InfoPlist.strings */; };
+		9CADEBD918E63BB3005D36D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CADEBD818E63BB3005D36D2 /* main.m */; };
+		9CADEBDD18E63BB3005D36D2 /* GTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CADEBDC18E63BB3005D36D2 /* GTAppDelegate.m */; };
+		9CADEBE018E63BB3005D36D2 /* Beeline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CADEBDE18E63BB3005D36D2 /* Beeline.xcdatamodeld */; };
+		9CADEBE218E63BB3005D36D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CADEBE118E63BB3005D36D2 /* Images.xcassets */; };
+		9CADEBE918E63BB3005D36D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBE818E63BB3005D36D2 /* XCTest.framework */; };
+		9CADEBEA18E63BB3005D36D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCA18E63BB3005D36D2 /* Foundation.framework */; };
+		9CADEBEB18E63BB3005D36D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCE18E63BB3005D36D2 /* UIKit.framework */; };
+		9CADEBEC18E63BB3005D36D2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBD018E63BB3005D36D2 /* CoreData.framework */; };
+		9CADEBF418E63BB3005D36D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CADEBF218E63BB3005D36D2 /* InfoPlist.strings */; };
+		9CADEBF618E63BB3005D36D2 /* BeelineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CADEBF518E63BB3005D36D2 /* BeelineTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CADEBED18E63BB3005D36D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CADEBBF18E63BB3005D36D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CADEBC618E63BB3005D36D2;
+			remoteInfo = Beeline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CADEBC718E63BB3005D36D2 /* Beeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CADEBCA18E63BB3005D36D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9CADEBCC18E63BB3005D36D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9CADEBCE18E63BB3005D36D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9CADEBD018E63BB3005D36D2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9CADEBD418E63BB3005D36D2 /* Beeline-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Beeline-Info.plist"; sourceTree = "<group>"; };
+		9CADEBD618E63BB3005D36D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CADEBD818E63BB3005D36D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9CADEBDA18E63BB3005D36D2 /* Beeline-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Beeline-Prefix.pch"; sourceTree = "<group>"; };
+		9CADEBDB18E63BB3005D36D2 /* GTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTAppDelegate.h; sourceTree = "<group>"; };
+		9CADEBDC18E63BB3005D36D2 /* GTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTAppDelegate.m; sourceTree = "<group>"; };
+		9CADEBDF18E63BB3005D36D2 /* Beeline.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beeline.xcdatamodel; sourceTree = "<group>"; };
+		9CADEBE118E63BB3005D36D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9CADEBE718E63BB3005D36D2 /* BeelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CADEBE818E63BB3005D36D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9CADEBF118E63BB3005D36D2 /* BeelineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeelineTests-Info.plist"; sourceTree = "<group>"; };
+		9CADEBF318E63BB3005D36D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9CADEBF518E63BB3005D36D2 /* BeelineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeelineTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CADEBC418E63BB3005D36D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CADEBCD18E63BB3005D36D2 /* CoreGraphics.framework in Frameworks */,
+				9CADEBD118E63BB3005D36D2 /* CoreData.framework in Frameworks */,
+				9CADEBCF18E63BB3005D36D2 /* UIKit.framework in Frameworks */,
+				9CADEBCB18E63BB3005D36D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CADEBE418E63BB3005D36D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CADEBE918E63BB3005D36D2 /* XCTest.framework in Frameworks */,
+				9CADEBEC18E63BB3005D36D2 /* CoreData.framework in Frameworks */,
+				9CADEBEB18E63BB3005D36D2 /* UIKit.framework in Frameworks */,
+				9CADEBEA18E63BB3005D36D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9CADEBBE18E63BB3005D36D2 = {
+			isa = PBXGroup;
+			children = (
+				9CADEBD218E63BB3005D36D2 /* Beeline */,
+				9CADEBEF18E63BB3005D36D2 /* BeelineTests */,
+				9CADEBC918E63BB3005D36D2 /* Frameworks */,
+				9CADEBC818E63BB3005D36D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CADEBC818E63BB3005D36D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CADEBC718E63BB3005D36D2 /* Beeline.app */,
+				9CADEBE718E63BB3005D36D2 /* BeelineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CADEBC918E63BB3005D36D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CADEBCA18E63BB3005D36D2 /* Foundation.framework */,
+				9CADEBCC18E63BB3005D36D2 /* CoreGraphics.framework */,
+				9CADEBCE18E63BB3005D36D2 /* UIKit.framework */,
+				9CADEBD018E63BB3005D36D2 /* CoreData.framework */,
+				9CADEBE818E63BB3005D36D2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CADEBD218E63BB3005D36D2 /* Beeline */ = {
+			isa = PBXGroup;
+			children = (
+				9CADEBDB18E63BB3005D36D2 /* GTAppDelegate.h */,
+				9CADEBDC18E63BB3005D36D2 /* GTAppDelegate.m */,
+				9CADEBE118E63BB3005D36D2 /* Images.xcassets */,
+				9CADEBDE18E63BB3005D36D2 /* Beeline.xcdatamodeld */,
+				9CADEBD318E63BB3005D36D2 /* Supporting Files */,
+			);
+			path = Beeline;
+			sourceTree = "<group>";
+		};
+		9CADEBD318E63BB3005D36D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CADEBD418E63BB3005D36D2 /* Beeline-Info.plist */,
+				9CADEBD518E63BB3005D36D2 /* InfoPlist.strings */,
+				9CADEBD818E63BB3005D36D2 /* main.m */,
+				9CADEBDA18E63BB3005D36D2 /* Beeline-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9CADEBEF18E63BB3005D36D2 /* BeelineTests */ = {
+			isa = PBXGroup;
+			children = (
+				9CADEBF518E63BB3005D36D2 /* BeelineTests.m */,
+				9CADEBF018E63BB3005D36D2 /* Supporting Files */,
+			);
+			path = BeelineTests;
+			sourceTree = "<group>";
+		};
+		9CADEBF018E63BB3005D36D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9CADEBF118E63BB3005D36D2 /* BeelineTests-Info.plist */,
+				9CADEBF218E63BB3005D36D2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CADEBC618E63BB3005D36D2 /* Beeline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CADEBF918E63BB3005D36D2 /* Build configuration list for PBXNativeTarget "Beeline" */;
+			buildPhases = (
+				9CADEBC318E63BB3005D36D2 /* Sources */,
+				9CADEBC418E63BB3005D36D2 /* Frameworks */,
+				9CADEBC518E63BB3005D36D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Beeline;
+			productName = Beeline;
+			productReference = 9CADEBC718E63BB3005D36D2 /* Beeline.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9CADEBE618E63BB3005D36D2 /* BeelineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CADEBFC18E63BB3005D36D2 /* Build configuration list for PBXNativeTarget "BeelineTests" */;
+			buildPhases = (
+				9CADEBE318E63BB3005D36D2 /* Sources */,
+				9CADEBE418E63BB3005D36D2 /* Frameworks */,
+				9CADEBE518E63BB3005D36D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CADEBEE18E63BB3005D36D2 /* PBXTargetDependency */,
+			);
+			name = BeelineTests;
+			productName = BeelineTests;
+			productReference = 9CADEBE718E63BB3005D36D2 /* BeelineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CADEBBF18E63BB3005D36D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Gall Thomas Inc.";
+				TargetAttributes = {
+					9CADEBE618E63BB3005D36D2 = {
+						TestTargetID = 9CADEBC618E63BB3005D36D2;
+					};
+				};
+			};
+			buildConfigurationList = 9CADEBC218E63BB3005D36D2 /* Build configuration list for PBXProject "Beeline" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9CADEBBE18E63BB3005D36D2;
+			productRefGroup = 9CADEBC818E63BB3005D36D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CADEBC618E63BB3005D36D2 /* Beeline */,
+				9CADEBE618E63BB3005D36D2 /* BeelineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CADEBC518E63BB3005D36D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CADEBD718E63BB3005D36D2 /* InfoPlist.strings in Resources */,
+				9CADEBE218E63BB3005D36D2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CADEBE518E63BB3005D36D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CADEBF418E63BB3005D36D2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CADEBC318E63BB3005D36D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CADEBD918E63BB3005D36D2 /* main.m in Sources */,
+				9CADEBDD18E63BB3005D36D2 /* GTAppDelegate.m in Sources */,
+				9CADEBE018E63BB3005D36D2 /* Beeline.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CADEBE318E63BB3005D36D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CADEBF618E63BB3005D36D2 /* BeelineTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CADEBEE18E63BB3005D36D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CADEBC618E63BB3005D36D2 /* Beeline */;
+			targetProxy = 9CADEBED18E63BB3005D36D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9CADEBD518E63BB3005D36D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CADEBD618E63BB3005D36D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9CADEBF218E63BB3005D36D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CADEBF318E63BB3005D36D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CADEBF718E63BB3005D36D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CADEBF818E63BB3005D36D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CADEBFA18E63BB3005D36D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beeline/Beeline-Prefix.pch";
+				INFOPLIST_FILE = "Beeline/Beeline-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9CADEBFB18E63BB3005D36D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beeline/Beeline-Prefix.pch";
+				INFOPLIST_FILE = "Beeline/Beeline-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9CADEBFD18E63BB3005D36D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Beeline.app/Beeline";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beeline/Beeline-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BeelineTests/BeelineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9CADEBFE18E63BB3005D36D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Beeline.app/Beeline";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Beeline/Beeline-Prefix.pch";
+				INFOPLIST_FILE = "BeelineTests/BeelineTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CADEBC218E63BB3005D36D2 /* Build configuration list for PBXProject "Beeline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CADEBF718E63BB3005D36D2 /* Debug */,
+				9CADEBF818E63BB3005D36D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CADEBF918E63BB3005D36D2 /* Build configuration list for PBXNativeTarget "Beeline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CADEBFA18E63BB3005D36D2 /* Debug */,
+				9CADEBFB18E63BB3005D36D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9CADEBFC18E63BB3005D36D2 /* Build configuration list for PBXNativeTarget "BeelineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CADEBFD18E63BB3005D36D2 /* Debug */,
+				9CADEBFE18E63BB3005D36D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9CADEBDE18E63BB3005D36D2 /* Beeline.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CADEBDF18E63BB3005D36D2 /* Beeline.xcdatamodel */,
+			);
+			currentVersion = 9CADEBDF18E63BB3005D36D2 /* Beeline.xcdatamodel */;
+			path = Beeline.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9CADEBBF18E63BB3005D36D2 /* Project object */;
+}
