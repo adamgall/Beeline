@@ -427,7 +427,7 @@
 				GCC_PREFIX_HEADER = "Beeline/Beeline-Prefix.pch";
 				INFOPLIST_FILE = "Beeline/Beeline-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "8440861D-AF5E-410A-8E8E-4FBA374F46F4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -447,7 +447,7 @@
 				GCC_PREFIX_HEADER = "Beeline/Beeline-Prefix.pch";
 				INFOPLIST_FILE = "Beeline/Beeline-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "8440861D-AF5E-410A-8E8E-4FBA374F46F4";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
