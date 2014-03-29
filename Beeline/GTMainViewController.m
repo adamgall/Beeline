@@ -11,6 +11,7 @@
 
 @interface GTMainViewController ()
 
+@property (nonatomic, strong) NSString *defaultChannel;
 @end
 
 @implementation GTMainViewController
@@ -19,18 +20,35 @@
 {
     [super viewDidLoad];
     
+    self.defaultChannel = @"Location";
+    
+    [self addDefaultChannel];
+}
+
+- (void)addDefaultChannel
+{
     // When users indicate they are no longer Giants fans, we unsubscribe them.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation addUniqueObject:@"Location" forKey:@"channels"];
+    [currentInstallation addUniqueObject:self.defaultChannel forKey:@"channels"];
     [currentInstallation saveInBackground];
 }
 
+- (void)removeDefaultChannel
+{
+    }
+
 - (IBAction)sendLocation:(id)sender
 {
-    PFPush *push = [[PFPush alloc] init];
-    [push setChannel:@"Location"];
-    [push setMessage:@"Crap butt."];
-    [push sendPushInBackground];
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation removeObject:self.defaultChannel forKey:@"channels"];
+    [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        PFPush *push = [[PFPush alloc] init];
+        [push setChannel:@"Location"];
+        [push setMessage:@"Crap butt."];
+        [push sendPushInBackground];
+        
+        [self addDefaultChannel];
+    }];
 }
 
 @end
