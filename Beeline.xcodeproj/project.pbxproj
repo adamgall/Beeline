@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C59601C18E6498B0091574E /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C59601B18E6498B0091574E /* iPhone.storyboard */; };
 		9CADEBCB18E63BB3005D36D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCA18E63BB3005D36D2 /* Foundation.framework */; };
 		9CADEBCD18E63BB3005D36D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCC18E63BB3005D36D2 /* CoreGraphics.framework */; };
 		9CADEBCF18E63BB3005D36D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCE18E63BB3005D36D2 /* UIKit.framework */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C59601B18E6498B0091574E /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		9CADEBC718E63BB3005D36D2 /* Beeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CADEBCA18E63BB3005D36D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CADEBCC18E63BB3005D36D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -160,6 +162,7 @@
 				9CADEBE118E63BB3005D36D2 /* Images.xcassets */,
 				9CADEBDE18E63BB3005D36D2 /* Beeline.xcdatamodeld */,
 				9CADEBD318E63BB3005D36D2 /* Supporting Files */,
+				9C59601B18E6498B0091574E /* iPhone.storyboard */,
 			);
 			path = Beeline;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CADEBD718E63BB3005D36D2 /* InfoPlist.strings in Resources */,
+				9C59601C18E6498B0091574E /* iPhone.storyboard in Resources */,
 				9CADEBE218E63BB3005D36D2 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +502,7 @@
 				9CADEBFB18E63BB3005D36D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9CADEBFC18E63BB3005D36D2 /* Build configuration list for PBXNativeTarget "BeelineTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				9CADEBFE18E63BB3005D36D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
