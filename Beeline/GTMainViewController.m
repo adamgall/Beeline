@@ -12,6 +12,9 @@
 @interface GTMainViewController ()
 
 @property (nonatomic, strong) NSString *defaultChannel;
+
+@property (nonatomic, weak) IBOutlet UIButton *sendLocation;
+
 @end
 
 @implementation GTMainViewController
@@ -27,6 +30,8 @@ CLLocationManager *locMan = nil;
     locMan = [[CLLocationManager alloc] init];
     [locMan startUpdatingLocation];
     
+    self.sendLocation.enabled = NO;
+    
     [self addDefaultChannel];
 }
 
@@ -35,7 +40,9 @@ CLLocationManager *locMan = nil;
     // When users indicate they are no longer Giants fans, we unsubscribe them.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation addUniqueObject:self.defaultChannel forKey:@"channels"];
-    [currentInstallation saveInBackground];
+    [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        self.sendLocation.enabled = YES;
+    }];
 }
 
 - (IBAction)sendLocation:(id)sender
@@ -54,6 +61,7 @@ CLLocationManager *locMan = nil;
     [push setChannel:@"Location"];
     [push sendPushInBackground];
     */
+    self.sendLocation.enabled = NO;
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation removeObject:self.defaultChannel forKey:@"channels"];
     [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {

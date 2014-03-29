@@ -46,6 +46,9 @@
                             <constraint firstAttribute="centerX" secondItem="0oc-lh-JDx" secondAttribute="centerX" id="wuo-FZ-Vnz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sendLocation" destination="0oc-lh-JDx" id="XeR-vw-Q1K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhV-v4-J3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
