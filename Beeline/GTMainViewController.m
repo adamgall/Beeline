@@ -56,11 +56,6 @@ CLLocationManager *locMan = nil;
     
     NSLog(@"lat: %f\nlong: %f", latitude, longitude);
     
-    /*
-    PFPush *push = [[PFPush alloc] init];
-    [push setChannel:@"Location"];
-    [push sendPushInBackground];
-    */
     self.sendLocation.enabled = NO;
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation removeObject:self.defaultChannel forKey:@"channels"];
