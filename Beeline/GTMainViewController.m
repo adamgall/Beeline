@@ -11,6 +11,7 @@
 
 @interface GTMainViewController ()
 
+@property (nonatomic, strong) NSString *defaultChannel;
 @end
 
 @implementation GTMainViewController
@@ -19,9 +20,16 @@
 {
     [super viewDidLoad];
     
+    self.defaultChannel = @"Location";
+    
+    [self addDefaultChannel];
+}
+
+- (void)addDefaultChannel
+{
     // When users indicate they are no longer Giants fans, we unsubscribe them.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation addUniqueObject:@"Location" forKey:@"channels"];
+    [currentInstallation addUniqueObject:self.defaultChannel forKey:@"channels"];
     [currentInstallation saveInBackground];
 }
 
@@ -29,30 +37,36 @@
 {
     float latitude, longitude;
     CLLocationManager *locationManager = [[CLLocationManager alloc] init];
+    //locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    //locationManager.delegate = self;
+    [locationManager startUpdatingLocation];
     CLLocation *here = locationManager.location;
     
-    // Get the accuracy of the location
-    float acc = here.horizontalAccuracy;
-    
-    // Call the WS to check-in
-    /*
-    NSDictionary* postParams = @{
-                                 @"settingsID": [NSNumber numberWithInt:self.appSettings.settingsID],
-                                 @"verified": [NSNumber numberWithInt:((self.checkinVerified) ? 1 : 0)],
-                                 @"accuracy": [NSNumber numberWithFloat:acc],
-                                 @"latitude": [NSNumber numberWithFloat:here.coordinate.latitude ],
-                                 @"longitude": [NSNumber numberWithFloat:here.coordinate.longitude ],
-                                 @"timestamp": [NSString stringWithFormat:@"2013-10-16 12:00:00"]
-                                 };
-     */
 
     latitude = here.coordinate.latitude;
     longitude = here.coordinate.longitude;
     
+    NSLog(@"lat: %f\nlong: %f", latitude, longitude);
+    
+    /*
     PFPush *push = [[PFPush alloc] init];
     [push setChannel:@"Location"];
-    [push setMessage:[NSString stringWithFormat:@"My Location: %f, %f", latitude, longitude]];
     [push sendPushInBackground];
+    */
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation removeObject:self.defaultChannel forKey:@"channels"];
+    [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        PFPush *push = [[PFPush alloc] init];
+        [push setChannel:self.defaultChannel];
+        [push setMessage:[NSString stringWithFormat:@"My Location: %f, %f", latitude, longitude]];
+        [push sendPushInBackground];
+        
+        [self addDefaultChannel];
+    }];
+}
+- (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    
 }
 
 @end
