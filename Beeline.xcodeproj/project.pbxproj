@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85A6A2B818E678A10076B209 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A6A2B718E678A10076B209 /* MapKit.framework */; };
 		9C59601C18E6498B0091574E /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C59601B18E6498B0091574E /* iPhone.storyboard */; };
 		9C9CEBBE18E667DC00447389 /* GTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEBBD18E667DC00447389 /* GTMainViewController.m */; };
 		9C9CEBC018E673D800447389 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C9CEBBF18E673D800447389 /* keys.plist */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85A6A2B718E678A10076B209 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9C59601B18E6498B0091574E /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		9C9CEBBC18E667DC00447389 /* GTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMainViewController.h; sourceTree = "<group>"; };
 		9C9CEBBD18E667DC00447389 /* GTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMainViewController.m; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				9CADEC0A18E6406A005D36D2 /* MobileCoreServices.framework in Frameworks */,
 				9CADEC0818E64064005D36D2 /* libz.dylib in Frameworks */,
 				9CADEC0618E6405D005D36D2 /* CoreLocation.framework in Frameworks */,
+				85A6A2B818E678A10076B209 /* MapKit.framework in Frameworks */,
 				9CADEBCD18E63BB3005D36D2 /* CoreGraphics.framework in Frameworks */,
 				9CADEC0418E64049005D36D2 /* CFNetwork.framework in Frameworks */,
 				9CADEC0218E64044005D36D2 /* AudioToolbox.framework in Frameworks */,
@@ -140,6 +143,7 @@
 		9CADEBC918E63BB3005D36D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85A6A2B718E678A10076B209 /* MapKit.framework */,
 				9CADEC1118E6407F005D36D2 /* SystemConfiguration.framework */,
 				9CADEC0F18E64079005D36D2 /* StoreKit.framework */,
 				9CADEC0D18E64075005D36D2 /* Security.framework */,
@@ -252,6 +256,16 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Gall Thomas Inc.";
 				TargetAttributes = {
+					9CADEBC618E63BB3005D36D2 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					9CADEBE618E63BB3005D36D2 = {
 						TestTargetID = 9CADEBC618E63BB3005D36D2;
 					};
