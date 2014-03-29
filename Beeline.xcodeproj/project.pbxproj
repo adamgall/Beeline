@@ -244,9 +244,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Gall Thomas Inc.";
 				TargetAttributes = {
-					9CADEBC618E63BB3005D36D2 = {
-						DevelopmentTeam = G8KWV229Y8;
-					};
 					9CADEBE618E63BB3005D36D2 = {
 						TestTargetID = 9CADEBC618E63BB3005D36D2;
 					};
@@ -427,7 +424,7 @@
 				GCC_PREFIX_HEADER = "Beeline/Beeline-Prefix.pch";
 				INFOPLIST_FILE = "Beeline/Beeline-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "42CC67EE-D4DC-44B0-B6BE-57874AA87356";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -447,7 +444,7 @@
 				GCC_PREFIX_HEADER = "Beeline/Beeline-Prefix.pch";
 				INFOPLIST_FILE = "Beeline/Beeline-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "42CC67EE-D4DC-44B0-B6BE-57874AA87356";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
