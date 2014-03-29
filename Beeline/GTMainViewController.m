@@ -16,11 +16,16 @@
 
 @implementation GTMainViewController
 
+CLLocationManager *locMan = nil;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.defaultChannel = @"Location";
+    
+    locMan = [[CLLocationManager alloc] init];
+    [locMan startUpdatingLocation];
     
     [self addDefaultChannel];
 }
@@ -36,11 +41,7 @@
 - (IBAction)sendLocation:(id)sender
 {
     float latitude, longitude;
-    CLLocationManager *locationManager = [[CLLocationManager alloc] init];
-    //locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    //locationManager.delegate = self;
-    [locationManager startUpdatingLocation];
-    CLLocation *here = locationManager.location;
+    CLLocation *here = locMan.location;
     
 
     latitude = here.coordinate.latitude;
