@@ -16,5 +16,6 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+keys.plist
 # Pods - for those of you who use CocoaPods
 Pods

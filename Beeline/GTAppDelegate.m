@@ -17,8 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [Parse setApplicationId:@"gLsrpqp20dD2YZicuc2pciko7UmB1f4d4X20Chkp"
-                  clientKey:@"vrtoBPTgwD8oSj4evk2DPVONMRJm7JfbwL17k9yS"];
+    NSDictionary *keys = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"keys" ofType:@"plist"]];
+ 
+    [Parse setApplicationId:[keys valueForKey:@"ParseApplicationId"]
+                  clientKey:[keys valueForKey:@"ParseClientKey"]];
     
     [application registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge|
                                                     UIRemoteNotificationTypeAlert|

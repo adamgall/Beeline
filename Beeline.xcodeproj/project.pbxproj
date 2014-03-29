@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9C59601C18E6498B0091574E /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C59601B18E6498B0091574E /* iPhone.storyboard */; };
 		9C9CEBBE18E667DC00447389 /* GTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEBBD18E667DC00447389 /* GTMainViewController.m */; };
+		9C9CEBC018E673D800447389 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C9CEBBF18E673D800447389 /* keys.plist */; };
 		9CADEBCB18E63BB3005D36D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCA18E63BB3005D36D2 /* Foundation.framework */; };
 		9CADEBCD18E63BB3005D36D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCC18E63BB3005D36D2 /* CoreGraphics.framework */; };
 		9CADEBCF18E63BB3005D36D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CADEBCE18E63BB3005D36D2 /* UIKit.framework */; };
@@ -50,6 +51,7 @@
 		9C59601B18E6498B0091574E /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		9C9CEBBC18E667DC00447389 /* GTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMainViewController.h; sourceTree = "<group>"; };
 		9C9CEBBD18E667DC00447389 /* GTMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMainViewController.m; sourceTree = "<group>"; };
+		9C9CEBBF18E673D800447389 /* keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
 		9CADEBC718E63BB3005D36D2 /* Beeline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beeline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CADEBCA18E63BB3005D36D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9CADEBCC18E63BB3005D36D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -168,6 +170,7 @@
 				9C59601B18E6498B0091574E /* iPhone.storyboard */,
 				9C9CEBBC18E667DC00447389 /* GTMainViewController.h */,
 				9C9CEBBD18E667DC00447389 /* GTMainViewController.m */,
+				9C9CEBBF18E673D800447389 /* keys.plist */,
 			);
 			path = Beeline;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9CEBC018E673D800447389 /* keys.plist in Resources */,
 				9CADEBD718E63BB3005D36D2 /* InfoPlist.strings in Resources */,
 				9C59601C18E6498B0091574E /* iPhone.storyboard in Resources */,
 				9CADEBE218E63BB3005D36D2 /* Images.xcassets in Resources */,
