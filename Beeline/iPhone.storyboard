@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="SHa-yR-2Na">
             <objects>
-                <viewController id="7fC-pM-Mt8" sceneMemberID="viewController">
+                <viewController id="7fC-pM-Mt8" customClass="GTMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C9g-zi-6Wp"/>
                         <viewControllerLayoutGuide type="bottom" id="EO6-Q8-GMg"/>
@@ -27,11 +27,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oc-lh-JDx">
+                                <rect key="frame" x="113" y="269" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Send location">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendLocation:" destination="7fC-pM-Mt8" eventType="touchUpInside" id="UFx-CM-NtC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="POt-r3-yho" firstAttribute="top" secondItem="C9g-zi-6Wp" secondAttribute="bottom" constant="35" id="Uza-71-cgI"/>
+                            <constraint firstAttribute="centerY" secondItem="0oc-lh-JDx" secondAttribute="centerY" id="cyf-Vy-Joc"/>
                             <constraint firstAttribute="centerX" secondItem="POt-r3-yho" secondAttribute="centerX" id="kze-3r-rsX"/>
+                            <constraint firstAttribute="centerX" secondItem="0oc-lh-JDx" secondAttribute="centerX" id="wuo-FZ-Vnz"/>
                         </constraints>
                     </view>
                 </viewController>
