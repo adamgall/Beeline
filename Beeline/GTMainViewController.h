@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <Parse/Parse.h>
 
-@interface GTMainViewController : UIViewController <CLLocationManagerDelegate>
+@interface GTMainViewController : UIViewController <CLLocationManagerDelegate, PFLogInViewControllerDelegate>
 
 @end

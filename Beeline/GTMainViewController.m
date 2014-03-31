@@ -33,6 +33,10 @@ CLLocationManager *locMan = nil;
     self.sendLocation.enabled = NO;
     
     [self addDefaultChannel];
+    
+    //PFLogInViewController *logInController = [[PFLogInViewController alloc] init];
+    //logInController.delegate = self;
+    //[self presentModalViewController:logInController animated:YES];
 }
 
 - (void)addDefaultChannel
@@ -71,6 +75,16 @@ CLLocationManager *locMan = nil;
 - (void) locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     
+}
+
+# pragma mark PFLogin Delegate Methods
+- (void)logInViewController:(PFLogInViewController *)controller
+               didLogInUser:(PFUser *)user {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)logInViewControllerDidCancelLogIn:(PFLogInViewController *)logInController {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

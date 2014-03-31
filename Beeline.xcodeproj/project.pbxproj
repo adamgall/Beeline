@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8565CEC918E9302D007D5C4D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8565CEC818E9302D007D5C4D /* LoginViewController.m */; };
+		8565CECD18E935E8007D5C4D /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8565CECC18E935E8007D5C4D /* RegistrationViewController.m */; };
 		85A6A2B818E678A10076B209 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A6A2B718E678A10076B209 /* MapKit.framework */; };
 		9C59601C18E6498B0091574E /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C59601B18E6498B0091574E /* iPhone.storyboard */; };
 		9C9CEBBE18E667DC00447389 /* GTMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9CEBBD18E667DC00447389 /* GTMainViewController.m */; };
@@ -49,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8565CEC718E9302D007D5C4D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8565CEC818E9302D007D5C4D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8565CECB18E935E8007D5C4D /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		8565CECC18E935E8007D5C4D /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
 		85A6A2B718E678A10076B209 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9C59601B18E6498B0091574E /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		9C9CEBBC18E667DC00447389 /* GTMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMainViewController.h; sourceTree = "<group>"; };
@@ -121,6 +127,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8565CEC618E9300A007D5C4D /* Login View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8565CEC718E9302D007D5C4D /* LoginViewController.h */,
+				8565CEC818E9302D007D5C4D /* LoginViewController.m */,
+			);
+			name = "Login View Controller";
+			sourceTree = "<group>";
+		};
+		8565CECA18E935D9007D5C4D /* Registration View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8565CECB18E935E8007D5C4D /* RegistrationViewController.h */,
+				8565CECC18E935E8007D5C4D /* RegistrationViewController.m */,
+			);
+			name = "Registration View Controller";
+			sourceTree = "<group>";
+		};
 		9CADEBBE18E63BB3005D36D2 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +190,8 @@
 		9CADEBD218E63BB3005D36D2 /* Beeline */ = {
 			isa = PBXGroup;
 			children = (
+				8565CECA18E935D9007D5C4D /* Registration View Controller */,
+				8565CEC618E9300A007D5C4D /* Login View Controller */,
 				9CADEBDB18E63BB3005D36D2 /* GTAppDelegate.h */,
 				9CADEBDC18E63BB3005D36D2 /* GTAppDelegate.m */,
 				9CADEBE118E63BB3005D36D2 /* Images.xcassets */,
@@ -317,9 +343,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C9CEBBE18E667DC00447389 /* GTMainViewController.m in Sources */,
+				8565CECD18E935E8007D5C4D /* RegistrationViewController.m in Sources */,
 				9CADEBD918E63BB3005D36D2 /* main.m in Sources */,
 				9CADEBDD18E63BB3005D36D2 /* GTAppDelegate.m in Sources */,
 				9CADEBE018E63BB3005D36D2 /* Beeline.xcdatamodeld in Sources */,
+				8565CEC918E9302D007D5C4D /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
